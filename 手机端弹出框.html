@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no;">
+
+<title>无标题文档</title>
+<style type="text/css">
+body{margin:0 auto;padding:0px;}
+.demo_lbj{ width:100%; height:100%;}
+.bg{ display: none;  position: absolute;  top: 0%;  left: 0%;  width: 100%;  height: 100%;  background-color: black;  z-index:1001;  -moz-opacity: 0.7;  opacity:.70;  filter: alpha(opacity=70);}
+.show{display: none;  position: absolute;  top: 20%;  left: 16%;  width: 60%;  height: 49%;  padding: 8px;  border: 8px solid #E8E9F7;  background-color: white;  z-index:1002;  overflow: auto; margin: 0 auto; text-align:center;}
+.show input{ margin-top:5px;}
+</style>
+
+</head>
+
+<body>
+<div class="demo_lbj">
+<img class="imm" src="images/bg.jpg" width="100%" height="100%" style="display:block;" border="0" onclick="showdiv();" >
+<div class="bg" id="bg"  onclick="hidediv();"></div><!--灰色部分-->
+<div class="show" id="show"> <!--弹出的内容-->
+<span>问题内容XXXXXXXXXXXXXX</span><br/>
+<input type="text" id="texts"  placeholder="请输入你的答案"><br/>
+<input type="button" value="确定" onclick="javascrtpt:window.open('https://www.jd.com/')">
+</div>
+</div>
+</body>
+</html>
+<script language="javascript" type="text/javascript">
+function showdiv() {            
+            document.getElementById("bg").style.display ="block";
+            document.getElementById("show").style.display ="block";
+        }
+function hidediv() {
+            document.getElementById("bg").style.display ='none';
+            document.getElementById("show").style.display ='none';
+        }
+</script>
